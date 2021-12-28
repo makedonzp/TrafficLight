@@ -1,0 +1,141 @@
+@keyframes _red {
+    0% {
+        background-color: red;
+    }
+
+    40% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+
+@keyframes _yellow {
+    0% {
+        background-color: gray;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: gray;
+    }
+
+    80% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes _green {
+    0% {
+        background-color: gray;
+    }
+
+    40% {
+        background-color: rgb(10, 226, 10);
+    }
+
+    60% {
+        background-color: gray;
+    }
+
+    63.5% {
+        background-color: rgb(10, 226, 10);
+    }
+
+    67% {
+        background-color: gray;
+    }
+
+    70.5% {
+        background-color: rgb(10, 226, 10);
+    }
+
+    74% {
+        background-color: gray;
+    }
+
+    77.5% {
+        background-color: rgb(10, 226, 10);
+    }
+
+    80% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+@keyframes _alert {
+    0% {
+        background-color: gray;
+    }
+    5% {
+        background-color: yellow;
+    }
+    10% {
+        background-color: gray;
+    }
+    15% {
+        background-color: yellow;
+    }
+    20% {
+        background-color: gray;
+    }
+    25% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: gray;
+    }
+    35% {
+        background-color: yellow;
+    }
+    40% {
+        background-color: gray;
+    }
+    45% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: gray;
+    }
+    55% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: gray;
+    }
+    65% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: gray;
+    }
+    75% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: gray;
+    }
+    85% {
+        background-color: yellow;
+    }
+    90% {
+        background-color: gray;
+    }
+    95% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: yellow;
+    }
+}

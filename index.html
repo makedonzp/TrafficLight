@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js" defer></script>
+    <title>Traffic_light</title>
+</head>
+
+<body>
+    <!-- Main container-fluid -->
+
+    <div class="container-fluid">
+
+        <!-- Container wrapper -->
+
+        <div class="container">
+
+            <!-- Wrapper Traffic light -->
+
+            <div class="box">
+
+                <!-- Body of Traffic light-->
+
+                <div class="row">
+                    <div class="col-2">
+                        <div class="light_red circle" data-red></div>
+                        <div class="light_yellow circle " data-yellow data-alert></div>
+                        <div class="light_green circle" data-green></div>
+                    </div>
+                </div>
+
+                <!-- Row with settings items first floor -->
+
+                <div class="row"
+                    style="display: flex; justify-content: space-around; align-items: center; width: 1200px;">
+                    <form>
+                        <select name="mode">
+                            <option value="on">On</option>
+                            <option value="off">Off</option>
+                            <option value="standby">standby mode</option>
+                        </select>
+                        <label>
+
+                            <!-- Checkbox -->
+
+                            <input class="hiden" type="checkbox" />
+
+                            <!-- Name of Checkbox -->
+
+                            <span style="color: rgb(0, 0, 0); text-transform: capitalize;font-weight: 700;font-size: 16px; background-color: rgb(255, 255, 255); padding: 3px; border-radius: 7px;border: solid 2px rgb(24, 24, 24);
+                        box-shadow: 0 0 3px 1px rgb(255, 226, 62);">
+                                Hidden Control
+                            </span>
+                        </label>
+
+                        <!-- Button pause -->
+
+                        <button class="dblClick" id="pause" data-alert>Play</button>
+                    </form>
+                </div>
+
+                <!-- Out of Traffic light to every light animation cycle time -->
+
+                <div class="row ">
+                    <label for="red">
+
+                        <!-- Out Red color -->
+
+                        <span style="color: white; font-size: 16px; ">Time cycle <span
+                                style="color: red; font-size: 16px; margin-right: 15px;">Red</span></span>
+                        <input class="input_zone" id="red_input" type="text" />
+                    </label>
+
+                    <!-- Out Yellow color -->
+
+                    <span style="color: white; font-size: 16px; ">Time cycle<span
+                            style="color: yellow; font-size: 16px; margin-right: 15px;">Yellow</span></span>
+                    <label for="yellow">
+                        <input class="input_zone" id="yellow_input" type="text" />
+                    </label>
+
+                    <!-- Out Green color -->
+
+                    <span style="color: white; font-size: 16px; ">Time cycle <span
+                            style="color: rgb(10, 226, 10); font-size: 16px; margin-right: 15px;">Yellow</span></span>
+                    <label for="green">
+                        <input class="input_zone" id="green_input" type="text" />
+                    </label>
+                </div>
+                <div class="row">
+
+                    <!-- Input for All colors animation -->
+
+                    <div>
+                        <span style="color: white; font-size: 16px; margin-right: 15px;">All time cycle </span>
+                        <input id="lenAll" type="number" name="quantity">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section for Diagram block -->
+
+            <section class="section">
+
+                <!-- Name of Diagram block -->
+
+                <h2>Traffic light diagram</h2>
+
+                <!-- Body of Diagram block -->
+
+                <div class="chart">
+
+                    <!--  Section of 100% length Diagram block First Floor -->
+
+                    <div class="line">
+
+                        <!-- Red line of Diagram block -->
+
+                        <div class="line_red"></div>
+                    </div>
+
+                    <!--  Section of 100% length Diagram block Second Floor -->
+
+                    <div class="line">
+                        <div class=" hidden"></div>
+
+                        <!-- Yellow line of Diagram block -->
+
+                        <div class="line_yellow"></div>
+                        <div class="hidden"></div>
+                        <div class="line_yellow"></div>
+                    </div>
+
+                    <!--  Section of 100% length Diagram block Third Floor -->
+
+                    <div class="line">
+
+                        <!-- Yellow line of Diagram block -->
+
+                        <div class="hidden"></div>
+                        <div class="line_green"></div>
+                    </div>
+                </div>
+
+                <!-- Inputs parameters for Diagram block-->
+
+                <div class="parameters">
+
+                    <!-- Input parameter Red -->
+
+                    <div>
+                        1.
+                        <input data-red class="parameter_time_red" type="number">
+                        Red(Sec)
+                    </div>
+
+                    <!-- Input parameter Yellow -->
+
+                    <div>
+                        2.
+                        <input data-yellow class="parameter_time_yellow" type="number">
+                        Yellow(Sec)
+                    </div>
+
+                    <!-- Input parameter Green -->
+
+                    <div>
+                        3.
+                        <input data-green class="parameter_time_green" type="number">
+                        Green(Sec)
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+</script>
+
+</html>
